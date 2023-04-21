@@ -1,0 +1,518 @@
+/* ==================== Removed elements ================= */
+
+.menu,
+.nav-top,
+.nav-bottom,
+.geometry-shape1,
+.headline-image {
+  display: none !important;
+}
+
+/* ==================== General styles ================= */
+
+body {
+  background: none;
+}
+
+.primary-text {
+  font-size: calc(30px + 5.5546vw);
+  line-height: 100%;
+}
+
+.primary-button {
+  max-width: 254px;
+  height: 70px;
+}
+
+.max-width {
+  max-width: 1440px;
+}
+
+.dark-button {
+  max-height: 51px;
+  max-width: 212px;
+  background: white;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+  transition: all 0.3s;
+}
+
+.dark-button i {
+  background: white;
+  color: #1a2236;
+  transition: all 0.3s;
+}
+
+.dark-button:hover {
+  background: #1a2236;
+  color: white;
+  border: 1px solid white;
+}
+
+.previous-project i {
+  margin-right: 18px;
+}
+
+.next-project i {
+  margin-left: 18px;
+}
+
+.dark-button:hover i {
+  background: #1a2236;
+  color: white;
+}
+
+.dark-button:active {
+  border: 2px solid white;
+}
+
+/* ==================== header styles ==================== */
+
+header {
+  height: 100px;
+  padding: 38px 0;
+  justify-content: center;
+  box-shadow: 0 0.5px 0 #dddfe6;
+}
+
+nav {
+  position: static;
+  grid-template-rows: 100%;
+  transform: translateY(0%);
+  opacity: 100;
+}
+
+.nav-links {
+  flex-direction: row;
+  list-style: none;
+  gap: 50px;
+}
+
+.nav-links a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1a2236;
+  background:
+    linear-gradient(to right, transparent, transparent),
+    linear-gradient(to right, black, black, black);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+/* ==================== headline styles ==================== */
+
+.headline {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  max-height: 877px;
+  grid-template-columns: 1fr 48.75%;
+  margin-bottom: 5%;
+}
+
+.info {
+  height: 100%;
+  width: 65.582%;
+  box-sizing: content-box;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0;
+  padding: 0 12.737% 0 21.6802%;
+  margin: 0;
+  background: url(assets/images/image-dots.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.info p {
+  margin: 9.523% 0 10.766% 0;
+}
+
+.headline-image2 {
+  display: block;
+  width: 100%;
+}
+
+/* ==================== Works styles ==================== */
+
+.works {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 32.3% 1% 22.2% 12.2% 7.9% 12.2% 1fr;
+  grid-template-rows: 33.9% 4.9% 11.6% 4.9% 11.6% 6.1% 4.6% 6.1% 7.5% 1fr;
+  height: calc(50vw + 120vh);
+  max-height: 1644px;
+  gap: 0;
+}
+
+.works-title {
+  grid-area: 1/1/2/3;
+  background-image: url(assets/images/image-dots.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.works-title h2 {
+  transform-origin: center;
+  transform: rotate(-90deg) translateX(-35%) translateY(-0%);
+  padding: 0;
+  height: min-content;
+  box-sizing: content-box;
+}
+
+.project-1 {
+  grid-area: 1/3/2/8;
+}
+
+.project-2 {
+  grid-area: 3/1/5/2;
+}
+
+.project-3 {
+  grid-area: 5/1/9/4;
+}
+
+.project-4 {
+  grid-area: 9/4/11/7;
+}
+
+.project-5 {
+  grid-area: 4/5/6/8;
+}
+
+.project-6 {
+  grid-area: 2/5/4/8;
+}
+
+.shape-2 {
+  grid-area: 2/2/5/5;
+  align-items: flex-end;
+}
+
+.shape-3 {
+  grid-area: 7/4/9/5;
+  align-items: flex-end;
+}
+
+.shape-4 {
+  grid-area: 9/1/10/4;
+  justify-content: space-between;
+}
+
+.shape-5 {
+  grid-area: 6/6/8/8;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.works-title,
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5,
+.project-6,
+.shape-2,
+.shape-3,
+.shape-4,
+.shape-5 {
+  height: 100%;
+}
+
+.shape-2 img,
+.shape-3 img,
+.shape-4 img,
+.shape-5 img {
+  max-width: 100%;
+}
+
+.project-container {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: flex-end;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.project-container:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-info {
+  position: absolute;
+  flex-direction: column;
+  height: 80.74%;
+  width: 100%;
+  padding: 6.25% 5.161% 6.25% 6.25%;
+  transform: translateY(+100%);
+  transition: all 0.4s ease-out;
+  background: rgba(26, 34, 54, 0.95);
+  backdrop-filter: blur(12px);
+}
+
+.project-1 .project-info,
+.project-3 .project-info {
+  height: 63.261%;
+}
+
+.project-container:hover .project-info,
+.project-container:focus-within .project-info {
+  transform: translateY(+0%);
+}
+
+.project-name h3 {
+  font-size: 2.777vw;
+  font-weight: 700;
+  line-height: 80%;
+  overflow-x: clip;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.project-container:hover .project-info {
+  transform: translateY(+0%);
+}
+
+.project-1 .project-name h3 {
+  font-size: calc(4.166vw);
+}
+
+.project-1 .project-tags,
+.project-3 .project-tags {
+  margin: 4% 0 7.0588% 0;
+}
+
+.project-tags li {
+  font-size: 1.388vw;
+  padding: 0.833vw 1.388vw;
+}
+
+.project-container button {
+  height: 51px;
+  width: 100%;
+  max-width: 212px;
+}
+
+.popup-window {
+  padding: 70px;
+}
+
+.popup-project-container {
+  align-items: center;
+}
+
+.arrow {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.popup-header .project-name {
+  font-size: 5vw;
+}
+
+.popup-header,
+.popup-images {
+  max-width: 1180px;
+  width: 100%;
+}
+
+.popup-description,
+.popup-buttons,
+.popup-links {
+  width: 100%;
+  max-width: 700px;
+}
+
+.popup-buttons {
+  flex-direction: row;
+}
+
+.popup-buttons button {
+  max-width: 246px;
+}
+
+.popup-links {
+  justify-content: space-between;
+}
+
+.popup-links button {
+  border: none;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  background-color: white;
+  gap: 18px;
+}
+
+/* ======================About myself=================================== */
+
+#about {
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 6.666vw;
+  margin: 5% 14px 32px 16px;
+}
+
+#about-info {
+  width: 446px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+#about-header {
+  font-weight: 400;
+  font-size: 110px;
+  line-height: 100%;
+}
+
+#about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+#about-button {
+  width: 254px;
+  height: 70px;
+}
+
+#abilities {
+  max-width: 578px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0;
+}
+
+/* for some reason I needed to put this in here to fix linter error */
+
+.contact-form ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ability,
+#ability-shape {
+  width: 20.0694vw;
+  max-width: 289px;
+  min-height: 289px;
+  flex-grow: 1;
+}
+
+#ability-shape {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#ability-shape img {
+  width: 100%;
+  max-width: 222px;
+}
+
+/* ==================== Contact styles ==================== */
+
+.contact {
+  margin-top: 158px;
+  background: url(assets/shapes/9.svg), url(assets/shapes/10.svg), #f9f9fa;
+  background-position: top left, right bottom;
+  background-repeat: no-repeat;
+  background-size: 18.268vw 24.363vw, 24.363vw;
+  padding: 168px 13px 176px 17px;
+  gap: 40px;
+  align-items: center;
+}
+
+.contact-info {
+  gap: 40px;
+}
+
+.contact-form {
+  gap: 40px;
+}
+
+.contact-info,
+.contact-form {
+  max-width: 548px;
+  align-items: center;
+}
+
+.contact-form ul li {
+  width: 48%;
+  flex-grow: 1;
+}
+
+.contact-form label {
+  padding-left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form li:focus-within label,
+.contact-form li:hover label {
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.form-buttons {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* ==================== Footer styles ==================== */
+
+footer {
+  flex-direction: row !important;
+  justify-content: space-between;
+  padding: 48px 160px;
+}
+
+/* ==================== special Cases ==================== */
+
+@media screen and (min-width: 1440px) {
+  .primary-text {
+    font-size: 110px;
+  }
+
+  .project-name h3 {
+    font-size: 40px;
+  }
+
+  .project-1 .project-name h3,
+  .popup-header .project-name {
+    font-size: 60px;
+  }
+
+  .project-tags li {
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+
+  .project-container button {
+    font-size: 18px;
+  }
+}
